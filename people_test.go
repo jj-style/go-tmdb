@@ -16,6 +16,7 @@ func (s *TmdbSuite) TestGetPersonInfo(c *C) {
 	c.Assert(result.Deathday, Equals, "")
 	c.Assert(result.AlsoKnownAs[0], Equals, "William Bradley Pitt")
 	c.Assert(result.PlaceOfBirth, Equals, "Shawnee - Oklahoma - USA")
+	c.Assert(result.Popularity.NotNil)
 
 	var options = make(map[string]string)
 	options["append_to_response"] = "changes,movie_credits,tv_credits,combined_credits,external_ids,images,tagged_images"
