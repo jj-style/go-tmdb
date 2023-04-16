@@ -11,6 +11,7 @@ type Person struct {
 	Overview        string                 `json:"overview"`
 	Adult           bool                   `json:"adult"`
 	Biography       string                 `json:"biography"`
+	Popularity      float32                `json:"popularity"`
 	Birthday        string                 `json:"birthday"`
 	Deathday        string                 `json:"deathday"`
 	Gender          int                    `json:"gender"`
